@@ -541,6 +541,9 @@ footer {
   opacity: 0%;
 }
 
+.port-item-container a:focus > .overlay {
+  opacity: 0%;
+}
 .overlay h3 {
   color: var(---white);
 }
