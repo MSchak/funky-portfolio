@@ -295,6 +295,11 @@ footer {
 
 .about-foot {
   color: var(--peach);
+  transition: 500ms ease;
+}
+
+.about-foot:hover {
+  transform: scale(1.2);
 }
 
 .bubbles {
