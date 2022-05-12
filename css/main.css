@@ -1,0 +1,1087 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+:root {
+  --peach: #f28177;
+  --bright-pink: #f25270;
+  --light-pink: #f26baa;
+  --orange: #f2a341;
+  --blue: #57f2f2;
+  ---white: #ffffff;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+}
+
+.container-fluid,
+.container {
+  height: 600px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.container {
+  padding: 1.5em;
+}
+
+p {
+  font-family: "Sanchez", serif;
+  font-size: 0.875em;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 700;
+  line-height: 0.7;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.8125em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--peach);
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/**************************************Nav Styles**************************************/
+.home {
+  color: var(--bright-pink);
+}
+
+.about {
+  color: var(--orange);
+}
+
+.contact {
+  color: var(--blue);
+}
+
+/******************************************FOOTER**********************************************/
+
+footer {
+  height: 35px;
+  background-color: var(--peach);
+  width: 100%;
+}
+
+#contact .row {
+  height: 100%;
+}
+
+#contact p {
+  font-size: 0.6em;
+  color: white;
+  margin: 0px;
+}
+
+/**************************************MOBILE STYLES**************************************/
+
+/**************************************Home Page**************************************/
+
+.hero-img {
+  background-image: url("../img/hero-vertical.png");
+  max-width: 762px;
+}
+
+.main-bubble {
+  background-color: white;
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+.main-bubble p {
+  text-transform: uppercase;
+}
+
+.profile-pic {
+  width: 225px;
+}
+
+.img-container {
+  position: absolute;
+  top: 245px;
+  right: 18px;
+}
+
+/**************************************Below the fold/directory**************************************/
+
+.directory {
+  background-color: var(--peach);
+  height: 575px;
+}
+
+.directory .container {
+  height: 550px;
+}
+
+.info h3 {
+  color: var(---white);
+}
+
+.right-arrow {
+  width: 250px;
+}
+
+/*Arrow animation*/
+.right-arrow {
+  animation: 1s infinite ease-in-out alternate bounce;
+}
+
+.right-arrow:hover {
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.info-arrow-parent {
+  position: relative;
+}
+
+.down-arrow-div {
+  width: 100px;
+  position: absolute;
+  top: 5em;
+  left: 43%;
+}
+
+.down-arrow {
+  width: 75%;
+}
+
+/**************************************About Section**************************************/
+
+#about {
+  height: 550px;
+}
+.about-head {
+  color: var(--orange);
+}
+
+.about-foot {
+  color: var(--peach);
+}
+
+.bubbles {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.bubbles .bubble {
+  width: 60px;
+  height: 60px;
+  background: var(--orange);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  transition: 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubbles .bubble:hover {
+  width: 150px;
+  height: 150px;
+  z-index: 3;
+  left: 35%;
+  top: 35%;
+}
+
+.bubbles .bubble:focus {
+  border: 1px solid blue;
+  width: 150px;
+  height: 150px;
+  z-index: 3;
+  left: 40%;
+  top: 42%;
+}
+
+.b-text {
+  color: white;
+  display: none;
+  font-size: 1.5em;
+}
+
+.bubbles .bubble:hover > .b-text {
+  display: block;
+}
+
+.bubbles .bubble:focus > .b-text {
+  display: block;
+}
+
+.n-1,
+.n-2,
+.n-3,
+.n-4,
+.n-5,
+.n-6,
+.n-7,
+.n-8,
+.n-9,
+.n-10 {
+  position: absolute;
+}
+
+/**********Each bubble is rotated 1/10th of the way around a large circle and given a different color**************/
+
+.bubbles .bubble:nth-child(1) {
+  transform: rotate(0deg) translate(137.5px);
+  background-color: var(--orange);
+}
+
+.bubbles .bubble:nth-child(2) {
+  transform: rotate(36deg) translate(137.5px);
+  background-color: var(--bright-pink);
+}
+
+.n-2 {
+  transform: rotate(-36deg);
+}
+
+.bubbles .bubble:nth-child(3) {
+  transform: rotate(72deg) translate(137.5px);
+  background-color: var(--light-pink);
+}
+
+.n-3 {
+  transform: rotate(-72deg);
+}
+
+.bubbles .bubble:nth-child(4) {
+  transform: rotate(108deg) translate(137.5px);
+  background-color: var(--orange);
+}
+
+.n-4 {
+  transform: rotate(-108deg);
+}
+
+.bubbles .bubble:nth-child(5) {
+  transform: rotate(144deg) translate(137.5px);
+  background-color: var(--blue);
+}
+
+.n-5 {
+  transform: rotate(-144deg);
+}
+
+.bubbles .bubble:nth-child(6) {
+  transform: rotate(180deg) translate(137.5px);
+  background-color: var(--peach);
+}
+
+.n-6 {
+  transform: rotate(-180deg);
+  font-size: 1.2em;
+}
+
+.bubbles .bubble:nth-child(7) {
+  transform: rotate(216deg) translate(137.5px);
+  background-color: var(--bright-pink);
+}
+
+.n-7 {
+  transform: rotate(-216deg);
+}
+
+.bubbles .bubble:nth-child(8) {
+  transform: rotate(252deg) translate(137.5px);
+  background-color: var(--orange);
+}
+
+.n-8 {
+  transform: rotate(-252deg);
+}
+
+.bubbles .bubble:nth-child(9) {
+  transform: rotate(288deg) translate(137.5px);
+  background-color: var(--blue);
+}
+
+.n-9 {
+  transform: rotate(-288deg);
+}
+
+.bubbles .bubble:nth-child(10) {
+  transform: rotate(324deg) translate(137.5px);
+  background-color: var(--peach);
+}
+
+.n-10 {
+  transform: rotate(-324deg);
+}
+
+/**************************************PORTFOLIO PAGE**************************************/
+
+.portfolio-heading {
+  color: var(--bright-pink);
+  text-decoration: underline;
+}
+
+.description-container {
+  margin-top: 2.5em;
+  padding: 0em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/**********Arrow widths**************/
+
+.blue-arrow {
+  width: 120px;
+}
+
+.orange-arrow {
+  width: 90px;
+}
+
+.peach-arrow,
+.pink-arrow {
+  width: 100px;
+}
+
+/**********Description font colors**************/
+
+.blue-text {
+  color: var(--blue);
+}
+
+.peach-text {
+  color: var(--peach);
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.pink-text {
+  color: var(--bright-pink);
+}
+
+/**********Portfolio items and overlays**************/
+
+.port-item-container {
+  position: relative;
+  margin-top: 2em;
+}
+
+.port-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: opacity 500ms ease;
+}
+
+.overlay:hover {
+  opacity: 0%;
+}
+
+.overlay h3 {
+  color: var(---white);
+}
+
+.hulu {
+  background-color: var(--blue);
+}
+
+.unplugged {
+  background-color: var(--peach);
+}
+
+.portfolio {
+  background-color: var(--orange);
+}
+
+.guess {
+  background-color: var(--bright-pink);
+}
+
+/**************************************CONTACT PAGE**************************************/
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/***
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   *
+   */
+
+/**************************************SMALL TABLET STYLES**************************************/
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 700px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  /**************************************FOOTER********************************************/
+
+  #contact p {
+    font-size: 0.65em;
+  }
+
+  /**************************************Home Page**************************************/
+
+  .main-bubble {
+    width: 325px;
+    height: 325px;
+  }
+
+  .img-container {
+    top: 210px;
+    right: 75px;
+  }
+
+  .profile-pic {
+    width: 250px;
+  }
+
+  /**************************************Below the fold/directory**************************************/
+
+  .right-arrow {
+    animation: 1s infinite ease-in-out alternate bounce;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(400px);
+    }
+
+    100% {
+      transform: translateX(200px);
+    }
+  }
+
+  .down-arrow-div {
+    width: 200px;
+    left: 43%;
+    top: 3.25em;
+  }
+
+  .down-arrow {
+    width: 50%;
+  }
+
+  /**************************************About Section**************************************/
+  #about {
+    height: 590px;
+  }
+
+  .b-text {
+    font-size: 1em;
+  }
+
+  /**************************************PORTFOLIO PAGE**************************************/
+}
+
+/**************************************TABLET STYLES**************************************/
+
+@media only screen and (min-width: 762px) {
+  .container {
+    max-width: 900px;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  /**************************************Home Page**************************************/
+
+  .hero-img {
+    padding-top: 85px;
+    background-image: url("../img/hero-horizontal.png");
+    max-width: 1000px;
+  }
+
+  .main-bubble {
+    position: unset;
+    width: 375px;
+    height: 375px;
+  }
+
+  .img-container {
+    position: unset;
+  }
+
+  .profile-pic {
+    width: 275px;
+  }
+
+  /**************************************Below the fold/directory**************************************/
+
+  .directory {
+    height: 650px;
+  }
+
+  .directory .container {
+    height: 600px;
+  }
+
+  .right-arrow-div {
+    height: 100px;
+  }
+
+  .right-arrow {
+    width: 300px;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(80px);
+    }
+
+    100% {
+      transform: translateX(-300px);
+    }
+  }
+
+  .down-arrow {
+    width: 60%;
+  }
+
+  /**************************************About Section**************************************/
+  #about {
+    height: 625px;
+  }
+
+  .n-6 {
+    font-size: 0.8em;
+  }
+  /**************************************PORTFOLIO PAGE**************************************/
+}
+/**************************************SMALL COMPUTER SCREEN STYLES**************************************/
+
+@media only screen and (min-width: 992px) {
+  .container {
+    height: 800px;
+    max-width: 1100px;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  /**************************************FOOTER********************************************/
+  footer {
+    height: 50px;
+  }
+
+  /**************************************Home Page**************************************/
+  .hero-img {
+    background-image: url("../img/hero-horizontal-lg.png");
+    max-width: 2000px;
+  }
+
+  /**************************************Below the fold/directory**************************************/
+
+  /**************************************About Section**************************************/
+  #about {
+    height: 680px;
+  }
+  .bubbles {
+    height: 375px;
+  }
+
+  .bubbles .bubble {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bubbles .bubble:hover {
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+    left: 41%;
+    top: 41%;
+  }
+
+  .bubbles .bubble:nth-child(1) {
+    transform: rotate(0deg) translate(180px);
+    background-color: var(--orange);
+  }
+  .bubbles .bubble:nth-child(2) {
+    transform: rotate(36deg) translate(180px);
+    background-color: var(--bright-pink);
+  }
+  .bubbles .bubble:nth-child(3) {
+    transform: rotate(72deg) translate(180px);
+    background-color: var(--light-pink);
+  }
+  .bubbles .bubble:nth-child(4) {
+    transform: rotate(108deg) translate(180px);
+    background-color: var(--orange);
+  }
+  .bubbles .bubble:nth-child(5) {
+    transform: rotate(144deg) translate(180px);
+    background-color: var(--blue);
+  }
+  .bubbles .bubble:nth-child(6) {
+    transform: rotate(180deg) translate(180px);
+    background-color: var(--peach);
+  }
+
+  .bubbles .bubble:nth-child(7) {
+    transform: rotate(216deg) translate(180px);
+    background-color: var(--bright-pink);
+  }
+  .bubbles .bubble:nth-child(8) {
+    transform: rotate(252deg) translate(180px);
+    background-color: var(--orange);
+  }
+  .bubbles .bubble:nth-child(9) {
+    transform: rotate(288deg) translate(180px);
+    background-color: var(--blue);
+  }
+  .bubbles .bubble:nth-child(10) {
+    transform: rotate(324deg) translate(180px);
+    background-color: var(--peach);
+  }
+
+  /**************************************PORTFOLIO PAGE**************************************/
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  li a {
+    font-size: 1.25em;
+  }
+
+  /**********Arrow widths**************/
+
+  .blue-arrow {
+    width: 200px;
+  }
+
+  .orange-arrow {
+    width: 150px;
+  }
+
+  .peach-arrow,
+  .pink-arrow {
+    width: 180px;
+  }
+}
+/**************************************COMPUTER SCREEN STYLES**************************************/
+
+@media only screen and (min-width: 1200px) {
+  .container-fluid {
+    height: 800px;
+  }
+
+  .container {
+    max-width: 1350px;
+  }
+
+  body {
+    font-size: 30px;
+  }
+
+  /**************************************Home Page**************************************/
+  .main-bubble {
+    width: 500px;
+    height: 500px;
+  }
+
+  .profile-pic {
+    width: 375px;
+  }
+
+  /**************************************Below the fold/directory**************************************/
+
+  .directory .container {
+    height: 800px;
+    padding: 80px;
+    padding-bottom: 130px;
+  }
+
+  /**************************************About Section**************************************/
+  #about {
+    height: 720px;
+  }
+  .b-text {
+    font-size: 0.9em;
+  }
+  .n-6 {
+    font-size: 0.65em;
+  }
+  /**************************************PORTFOLIO PAGE**************************************/
+  h4 {
+    font-size: 1.75em;
+  }
+
+  /**********Arrow widths**************/
+}
+
+@media only screen and (min-width: 1400px) {
+  /**************************************PORTFOLIO PAGE**************************************/
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+
+  /**************************************PORTFOLIO PAGE**************************************/
+}
+
+@media only screen and (min-width: 1800px) {
+  .container {
+    max-width: 1750px;
+  }
+
+  /**************************************About Section**************************************/
+
+  .b-text {
+    font-size: 0.75em;
+  }
+  .n-6 {
+    font-size: 0.5em;
+  }
+
+  /**************************************PORTFOLIO PAGE**************************************/
+
+  .overlay {
+    width: 100%;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
