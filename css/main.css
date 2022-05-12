@@ -186,9 +186,18 @@ footer {
 }
 
 #contact p {
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: white;
   margin: 0px;
+}
+
+#contact svg {
+  transition: 350ms ease;
+  padding-bottom: 1px;
+}
+
+#contact svg:hover {
+  transform: scale(1.2);
 }
 
 /**************************************MOBILE STYLES**************************************/
@@ -237,17 +246,17 @@ footer {
   color: var(---white);
 }
 
+/*Arrow animation*/
+
 .right-arrow {
   width: 250px;
-}
-
-/*Arrow animation*/
-.right-arrow {
   animation: 1s infinite ease-in-out alternate bounce;
+  transition: ease 250ms;
 }
 
 .right-arrow:hover {
   animation-play-state: paused;
+  border: 2px solid white;
 }
 
 @keyframes bounce {
@@ -822,6 +831,15 @@ ul {
   /**************************************FOOTER********************************************/
   footer {
     height: 50px;
+  }
+
+  #contact p {
+    font-size: 0.8em;
+  }
+  #contact svg {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 2px;
   }
 
   /**************************************Home Page**************************************/
