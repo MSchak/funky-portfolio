@@ -191,6 +191,10 @@ footer {
   margin: 0px;
 }
 
+#contact span {
+  display: none;
+}
+
 #contact svg {
   transition: 350ms ease;
   padding-bottom: 1px;
@@ -261,7 +265,7 @@ footer {
 
 @keyframes bounce {
   0% {
-    transform: translateX(200px);
+    transform: translateX(150px);
   }
 
   100% {
@@ -327,26 +331,26 @@ footer {
 }
 
 .bubbles .bubble:hover {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   z-index: 3;
-  left: 35%;
-  top: 35%;
+  left: 40%;
+  top: 40%;
 }
 
 .bubbles .bubble:focus {
   border: 1px solid blue;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   z-index: 3;
   left: 40%;
-  top: 42%;
+  top: 40%;
 }
 
 .b-text {
   color: white;
   display: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .bubbles .bubble:hover > .b-text {
@@ -420,7 +424,7 @@ footer {
 
 .n-6 {
   transform: rotate(-180deg);
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .bubbles .bubble:nth-child(7) {
@@ -692,6 +696,10 @@ ul {
     font-size: 0.65em;
   }
 
+  #contact span {
+    display: inline;
+  }
+
   /**************************************Home Page**************************************/
 
   .main-bubble {
@@ -739,8 +747,22 @@ ul {
     height: 590px;
   }
 
+  .bubbles .bubble:hover {
+    width: 150px;
+    height: 150px;
+    left: 35%;
+    top: 35%;
+  }
+
+  .bubbles .bubble:focus {
+    width: 150px;
+    height: 150px;
+    left: 35%;
+    top: 35%;
+  }
+
   .b-text {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   /**************************************PORTFOLIO PAGE**************************************/
@@ -816,6 +838,10 @@ ul {
     height: 625px;
   }
 
+  .b-text {
+    font-size: 1em;
+  }
+
   .n-6 {
     font-size: 0.8em;
   }
@@ -872,6 +898,11 @@ ul {
     width: 150px;
     height: 150px;
     z-index: 3;
+    left: 41%;
+    top: 41%;
+  }
+
+  .bubbles .bubble:focus {
     left: 41%;
     top: 41%;
   }
