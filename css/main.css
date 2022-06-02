@@ -250,26 +250,31 @@ footer {
   color: var(---white);
 }
 
-/*Arrow animation*/
+/*Port-btn animation*/
 
-.right-arrow {
-  width: 250px;
-  animation: 1s infinite ease-in-out alternate bounce;
-  transition: ease 250ms;
+.port-btn {
+  animation: 800ms infinite ease-in-out bounce;
+  padding: 10px 40px;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
-.right-arrow:hover {
+.port-btn a {
+  color: white;
+  font-family: "Sanchez", serif;
+}
+
+.port-btn:hover {
   animation-play-state: paused;
-  border: 2px solid white;
 }
 
 @keyframes bounce {
   0% {
-    transform: translateX(150px);
+    transform: scale(0.7);
   }
 
   100% {
-    transform: translateX(0px);
+    transform: scale(0.8);
   }
 }
 
@@ -721,18 +726,8 @@ ul {
 
   /**************************************Below the fold/directory**************************************/
 
-  .right-arrow {
+  .port-btn {
     animation: 1s infinite ease-in-out alternate bounce;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateX(400px);
-    }
-
-    100% {
-      transform: translateX(200px);
-    }
   }
 
   .down-arrow-div {
@@ -812,24 +807,6 @@ ul {
 
   .directory .container {
     height: 600px;
-  }
-
-  .right-arrow-div {
-    height: 100px;
-  }
-
-  .right-arrow {
-    width: 300px;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateX(80px);
-    }
-
-    100% {
-      transform: translateX(-300px);
-    }
   }
 
   .down-arrow {
